@@ -5,7 +5,9 @@ version: 2.1
 jobs:
   testRoutine:
     # Specify the execution environment. 
+    docker:
       - image: cimg/base:stable
+
     steps:
       - checkout
       - run:
@@ -16,4 +18,3 @@ workflows:
   testRoutine-workflow:
     jobs:
       - testRoutine
-
