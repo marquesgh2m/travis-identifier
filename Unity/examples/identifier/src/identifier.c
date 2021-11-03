@@ -21,6 +21,41 @@ int valid_f(char ch) {
     return 0;
 }
 
+int identifier(char input_[]){
+  char achar;
+  int  length, valid_id;
+  length = 0;
+  printf("Identificador: ");
+  achar = input_[0];
+  valid_id = valid_s(achar);
+  if(valid_id) {
+    length = 1;
+  }
+  achar =  input_[1];
+  while(achar != '\0') { //'\n'
+    printf("\n>%c", achar);
+    if(!(valid_f(achar))) {
+      valid_id = 0;
+    }
+    length++;
+    achar = input_[length];
+  }
+  if (valid_id && (length >= 1) && (length < 6)) {
+    printf("Valido\n");
+    return 0;
+  }
+  else {
+    printf("Invalido\n");
+    return 1;
+  }
+}
+
+/*
+int main(int argc, char **argv){
+  identifier("2bolo");
+}*/
+
+/*
 int main(void) {
   char achar;
   int  length, valid_id;
@@ -33,6 +68,7 @@ int main(void) {
   }
   achar = fgetc(stdin);
   while(achar != '\n') {
+    printf("\n>%c", achar);
     if(!(valid_f(achar))) {
       valid_id = 0;
     }
@@ -47,4 +83,4 @@ int main(void) {
     printf("Invalido\n");
     return 1;
   }
-}
+}*/
