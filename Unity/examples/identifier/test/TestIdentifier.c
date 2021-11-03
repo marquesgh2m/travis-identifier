@@ -2,6 +2,7 @@
 #include "unity_fixture.h"
 #include <time.h>
 #include <stdlib.h>
+#include "identifier.h"
 
 TEST_GROUP(Identifier);
 

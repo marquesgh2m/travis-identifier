@@ -6,6 +6,7 @@
 // ----------------------------------------------------------------
 
 #include <stdio.h>
+#include "identifier.h"
 
 int valid_s(char ch) {
   if (((ch >= 'A') && (ch <= 'Z')) || ((ch >= 'a') && (ch <= 'z')))
