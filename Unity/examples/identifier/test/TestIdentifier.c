@@ -17,19 +17,41 @@ TEST_TEAR_DOWN(Identifier)
     
 }
 
-// Testa elemento a elemento ordenado entre um vetor de entrada e um vetor de saida
-TEST(Identifier, TestIdentifier1)
+TEST(Identifier, ValidSize)
 {
-
+	TEST_ASSERT_EQUAL(identifier("bola"), 0);
 }
 
-// Testa elemento a elemento ordenado
-TEST(Identifier, TestIdentifier2)
+TEST(Identifier, MinSize)
 {
-
+	TEST_ASSERT_EQUAL(identifier(""), 1);
 }
 
-TEST(Identifier, TestIdentifier3)
+TEST(Identifier, MaxSize)
 {
-
+	TEST_ASSERT_EQUAL(identifier("carteira"), 1);
 }
+
+TEST(Identifier, ValidChar)
+{
+	TEST_ASSERT_EQUAL(identifier("flor"), 0);
+}
+
+TEST(Identifier, LettersDigs)
+{
+	TEST_ASSERT_EQUAL(identifier("flor2"), 0) ;
+}
+
+TEST(Identifier, InvalidFirstChar)
+{
+	TEST_ASSERT_EQUAL(identifier("2flor"), 1);
+}
+
+TEST(Identifier, InvalidChar)
+{
+	TEST_ASSERT_EQUAL(identifier("flor#"), 1);
+}
+
+
+
+

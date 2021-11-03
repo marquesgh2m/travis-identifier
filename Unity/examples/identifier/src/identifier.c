@@ -25,7 +25,7 @@ int identifier(char input_[]){
   char achar;
   int  length, valid_id;
   length = 0;
-  printf("Identificador: ");
+  //printf("Identificador: ");
   achar = input_[0];
   valid_id = valid_s(achar);
   if(valid_id) {
@@ -33,7 +33,7 @@ int identifier(char input_[]){
   }
   achar =  input_[1];
   while(achar != '\0') { //'\n'
-    printf("\n>%c", achar);
+    //printf("\n>%c", achar);
     if(!(valid_f(achar))) {
       valid_id = 0;
     }
@@ -41,11 +41,11 @@ int identifier(char input_[]){
     achar = input_[length];
   }
   if (valid_id && (length >= 1) && (length < 6)) {
-    printf("Valido\n");
+    //printf("Valido\n");
     return 0;
   }
   else {
-    printf("Invalido\n");
+    //printf("Invalido\n");
     return 1;
   }
 }
