@@ -8,13 +8,13 @@ jobs:
     docker:
       - image: cimg/base:stable
 
-    working_directory: ~/Unity/examples/identifier
+    working_directory: ~/project
 
     steps:
       - checkout
       - run:
           name: "Test Routine"
-          command: make
+          command: ll
 
 workflows:
   testRoutine-workflow:
