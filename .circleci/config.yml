@@ -8,13 +8,13 @@ jobs:
     docker:
       - image: cimg/base:stable
 
-    working_directory: ~/project
+    working_directory: ~/project/Unity/examples/identifier
 
     steps:
       - checkout
       - run:
           name: "Open Test Dir"
-          command: cd Unity/examples/identifier
+          command: cd 
       - run:
           name: "Test Routine"
           command: ls -a
