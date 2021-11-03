@@ -17,3 +17,6 @@ clean:
 
 test: all
 	bash test
+
+hello:
+	echo "hello"

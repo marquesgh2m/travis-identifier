@@ -54,7 +54,7 @@ SRC_FILES1=\
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src
 SYMBOLS=
 
-all: clean test compile run 
+all: clean testcppcheck compile run 
 
 compile:
 	$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET1)
@@ -65,7 +65,7 @@ run:
 clean:
 	$(CLEANUP) $(TARGET1)
 
-test: 
+testcppcheck:
 	cppcheck src/identifier.c
 
 ci: CFLAGS += -Werror
