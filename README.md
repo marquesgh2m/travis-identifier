@@ -2,9 +2,9 @@ Travis Identifier [![License][license-img]][license-url]
 =
 Simple Travis example for C using GCC compiler based on the identifier program presented by Delamaro et al. "Introdução ao Teste de Software". Elsevier. 2007.
 
-Test results:
-
-[<img alt="Build Status" src="https://www.travis-ci.com/marquesgh2m/travis-identifier.svg?branch=main" height="40">][travis-url]
+Test results:  
+[![CircleCI](https://circleci.com/gh/marquesgh2m/travis-identifier/tree/main.svg?style=svg)](https://circleci.com/gh/marquesgh2m/travis-identifier/tree/main)  
+[![CircleCI](https://circleci.com/gh/marquesgh2m/travis-identifier/tree/main.svg?style=shield)](https://circleci.com/gh/marquesgh2m/travis-identifier/tree/main)  
 
 Important files:
 
