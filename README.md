@@ -6,6 +6,8 @@ Test results:
 
 [<img alt="Build Status" src="https://www.travis-ci.com/marquesgh2m/travis-identifier.svg?branch=main" height="40">][travis-url]
 
+[![CircleCI](https://circleci.com/gh/marquesgh2m/travis-identifier/tree/main.svg?style=svg)](https://circleci.com/gh/marquesgh2m/travis-identifier/tree/main)
+
 Important files:
 
 * [identifier.c](identifier.c)
