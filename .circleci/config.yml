@@ -8,8 +8,6 @@ jobs:
     docker:
       - image: cimg/base:stable
 
-    working_directory: ~/project/Unity/examples/identifier
-
     steps:
       - checkout
       - run:
@@ -18,6 +16,9 @@ jobs:
       - run:
           name: "Test Routine"
           command: ls -a
+      - run:
+          name: "Test Routine Make"
+          command: make
 
 workflows:
   testRoutine-workflow:
