@@ -11,6 +11,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Apt update"
+          command: sudo apt update 
+      - run:
           name: "Install cppcheck"
           command: sudo apt install cppcheck 
       - run:
