@@ -54,10 +54,13 @@ SRC_FILES1=\
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src
 SYMBOLS=
 
-all: clean testcppcheck compile run 
+all: clean testcppcheck compile testvalgrind run compilesanitizer
 
 compile:
 	$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET1)
+
+compilesanitizer:
+	$(C_COMPILER) -g -Wall -Wfatal-errors -fsanitize=address $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET1)
 
 run:
 	- ./$(TARGET1) -v
@@ -67,6 +70,9 @@ clean:
 
 testcppcheck:
 	cppcheck src/identifier.c
+
+testvalgrind:
+	valgrind --leak-check=full --show-leak-kinds=all ./all_tests.out
 
 ci: CFLAGS += -Werror
 ci: compile
