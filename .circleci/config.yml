@@ -11,6 +11,12 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Install cppcheck"
+          command: apt install cppcheck 
+      - run:
+          name: "Install valgrind"
+          command: apt install valgrind
+      - run:
           name: "Open Test Dir"
           command: cd 
       - run:
