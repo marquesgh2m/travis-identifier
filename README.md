@@ -1,6 +1,6 @@
-Travis Identifier [![License][license-img]][license-url]
+"Travis" Identifier [![License][license-img]][license-url]
 =
-Simple Travis example for C using GCC compiler based on the identifier program presented by Delamaro et al. "Introdução ao Teste de Software". Elsevier. 2007.
+Simple Circleci example for C using GCC compiler based on the identifier program presented by Delamaro et al. "Introdução ao Teste de Software". Elsevier. 2007.
 
 Test results:  
 [![CircleCI](https://circleci.com/gh/marquesgh2m/travis-identifier/tree/main.svg?style=svg)](https://circleci.com/gh/marquesgh2m/travis-identifier/tree/main)  
@@ -8,9 +8,9 @@ Test results:
 
 Important files:
 
-* [identifier.c](identifier.c)
-* [Makefile](Makefile)
-* [.travis.yml](.travis.yml)
+* [identifier.c](Unity/examples/identifier/src/identifier.c)
+* [Makefile](/home/marques/git_ws/travis-identifier/Unity/examples/identifier/makefile)
+* [.circleci/config.yml](.circleci/config.yml)
 
 
 Authors
