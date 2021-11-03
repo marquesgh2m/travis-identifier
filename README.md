@@ -13,8 +13,10 @@ Important files:
 * [.travis.yml](.travis.yml)
 
 
-Author
+Authors
 ------
+[**Alexandre Hampel**](https://br.linkedin.com/)
+[**Guilherme Marques**](https://br.linkedin.com/)
 [**Rafael Garibotti**](https://br.linkedin.com/in/rafaelgaribotti)
 
 
@@ -22,10 +24,10 @@ License
 -------
 MIT License. See [LICENSE](LICENSE) for details.
 
-[main-url]: https://github.com/rafaelgaribotti/travis-identifier
-[readme-url]: https://github.com/rafaelgaribotti/travis-identifier/blob/main/README.md
-[license-url]: https://github.com/rafaelgaribotti/travis-identifier/blob/main/LICENSE
+[main-url]: https://github.com/marquesgh2m/travis-identifier
+[readme-url]: https://github.com/marquesgh2m/travis-identifier/blob/main/README.md
+[license-url]: https://github.com/marquesgh2m/travis-identifier/blob/main/LICENSE
 [license-img]: https://img.shields.io/github/license/rsp/travis-hello-modern-cpp.svg
-[travis-url]: https://www.travis-ci.com/rafaelgaribotti/travis-identifier
-[travis-img]: https://www.travis-ci.com/rafaelgaribotti/travis-identifier.svg?branch=master
-[github-follow-url]: https://github.com/rafaelgaribotti
+[travis-url]: https://www.travis-ci.com/marquesgh2m/travis-identifier
+[travis-img]: https://www.travis-ci.com/marquesgh2m/travis-identifier.svg?branch=master
+[github-follow-url]: https://github.com/marquesgh2m
