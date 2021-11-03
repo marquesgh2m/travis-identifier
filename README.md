@@ -15,9 +15,9 @@ Important files:
 
 Authors
 ------
-[**Alexandre Hampel**](https://br.linkedin.com/)
-[**Guilherme Marques**](https://br.linkedin.com/)
-[**Rafael Garibotti**](https://br.linkedin.com/in/rafaelgaribotti)
+[**Alexandre Hampel**](https://br.linkedin.com/)  
+[**Guilherme Marques**](https://br.linkedin.com/)  
+[**Rafael Garibotti**](https://br.linkedin.com/in/rafaelgaribotti)  
 
 
 License
